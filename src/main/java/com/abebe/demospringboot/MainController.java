@@ -9,10 +9,10 @@ import java.util.Scanner;
 @RestController
 public class MainController {
 
-    @RequestMapping(value="/home/data")
+    @RequestMapping(value="/home/data/la")
     public String ShowIndex()
     {
-        String userName="";
+        String userName;
         Scanner keyBoard = new Scanner(System.in);
         userName = keyBoard.nextLine();
         String greet = "Hello" +" "+ userName;
